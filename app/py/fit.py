@@ -25,8 +25,6 @@ def login():
 
 @app.route('/oauth_authorized')
 def oauth_authorized():
-	if 'fitbit_access_token' not in session:
-		return redirect(url_for('login'))
 	oauth_token = request.args.get('oauth_token')
 	oauth_verifier = request.args.get('oauth_verifier')
 	access_token = oauth_client.fetch_access_token(oauth_verifier)
