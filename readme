@@ -1,1 +1,13 @@
 onpeak fitbit app
+
+to install:
+create a new virtual environment 
+- cd ~/pyenv (or wherever you want your environment to be)
+- virtualenv fitbitpy
+run pip:
+- cd ~/pyenv/fitbitpy/bin/
+- ./pip install -r ~/repos/onpeakFitbitApp/app/py/requirements.txt
+run the app:
+- cd ~/repos/onpeakFItbitApp/app/py
+- ~/pyenv/fitbitpy/bin/python fit.py 
+you should be able to hit the app at http://127.0.0.1:5000/
